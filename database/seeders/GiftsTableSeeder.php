@@ -14,28 +14,28 @@ class GiftsTableSeeder extends Seeder
      *
      * @return void
      */
-    public function run(Faker $faker)
-    {
-        for($i = 0; $i < 10; $i++ ){
+    // public function run(Faker $faker)
+    // {
+    //     for($i = 0; $i < 10; $i++ ){
 
-            $newGift = new Gift();
-            $newGift ->gift = $faker->word();
-            $newGift ->name = $faker->firstName($gender = 'male' | 'female');
-            $newGift ->surname = $faker->lastName();
-            $newGift ->age = $faker->numberBetween(1,15);
-            $newGift ->country = $faker->country();
-            $newGift ->city = $faker->city();
-            $newGift ->address = $faker->address();
-            $newGift ->image = $faker->imageUrl(640,480);
-            $newGift ->description = $faker->paragraph();
-
-
-
-            $newGift -> save();
+    //         $newGift = new Gift();
+    //         $newGift ->gift = $faker->word();
+    //         $newGift ->name = $faker->firstName($gender = 'male' | 'female');
+    //         $newGift ->surname = $faker->lastName();
+    //         $newGift ->age = $faker->numberBetween(1,15);
+    //         $newGift ->country = $faker->country();
+    //         $newGift ->city = $faker->city();
+    //         $newGift ->address = $faker->address();
+    //         $newGift ->image = $faker->imageUrl(640,480);
+    //         $newGift ->description = $faker->paragraph();
 
 
 
+    //         $newGift -> save();
 
-        }
-    }
+
+
+
+    //     }
+    // }
 }

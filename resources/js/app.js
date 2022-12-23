@@ -3,8 +3,9 @@ import '~resources/scss/app.scss';
 import * as bootstrap from 'bootstrap';
 import.meta.glob([
     '../img/**'
-])
+]);
 
+// NEVE
 const snowContainer = document.getElementById("snow-container");
 const snowContent = ['&#10053', '&#10054', 'Buon Natale']
 
@@ -38,4 +39,9 @@ const createSnow = (num) => {
 window.addEventListener("load", () => {
     createSnow(40)
 });
+
+// FINE NEVE
+
+
+// ALBERO
 

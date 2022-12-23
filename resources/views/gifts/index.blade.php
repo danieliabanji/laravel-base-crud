@@ -1,8 +1,6 @@
 <?php
 $packages = config('package.packages');
 ?>
-
-
 @extends('layouts.app')
 
 @section('content')
@@ -11,7 +9,7 @@ $packages = config('package.packages');
 
 
         <div class="container">
-            <a href="{{ route('gifts.create') }}" class="text-decoration-none">
+            <a href="{{ route('home') }}" class="text-decoration-none">
                 <h1 class="text-center py-5 fonts">Regali di Natale</h1>
             </a>
             <div class="row ">
@@ -29,7 +27,7 @@ $packages = config('package.packages');
                                 <form action="{{ route('gifts.destroy', $gift->id) }}" method="POST" class="d-inline">
                                     @csrf
                                     @method('delete')
-                                    <button type="submit" class="btn btn-danger my_btn_delete"><i
+                                    <button type="submit" class="btn my_btn_delete"><i
                                             class="fa-solid fa-trash"></i></button>
                                 </form>
                             </div>
@@ -44,9 +42,20 @@ $packages = config('package.packages');
                 <div class="card-front">
                     <div class="christmas-tree"></div>
                     <div class="ribbon"></div>
-                    <div class="text"><a href="{{ route('gifts.create') }}" class="btn btn-success">
+                    <div class="text">
+                        {{-- <a href="{{ route('gifts.create') }}" class="btn btn-success">
                             Scrivi a Babbo
-                        </a></div>
+                        </a> --}}
+                        <div class="bg">
+                            <div class="centerer">
+                                <a href="{{ route('gifts.create') }}"
+                                    class="btn btn-primary mybtn_position my_btn_gold">Scrivi a
+                                    Babbo</a>
+                            </div>
+                        </div>
+
+
+                    </div>
                     <div class="star"></div>
                     <div class="balls"></div>
                 </div>
