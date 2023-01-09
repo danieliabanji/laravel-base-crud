@@ -16,5 +16,10 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+<<<<<<< HEAD
 /package-lock.json
 /composer.lock
+=======
+composer.lock
+package-lock.json
+>>>>>>> origin/Salvatore-Branch
